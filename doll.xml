@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+	<featureModel chosenLayoutAlgorithm="1">
+		<struct>
+			<alt abstract="true" mandatory="true" name="Chernochat">
+				<and mandatory="true" name="Barbiepuppe">
+					<and mandatory="true" name="Kopf">
+						<and mandatory="true" name="Haare">
+							<alt mandatory="true" name="Farbe">
+								<feature mandatory="true" name="schwarz"/>
+								<feature mandatory="true" name="brünett"/>
+								<feature mandatory="true" name="rot"/>
+								<feature mandatory="true" name="blond"/>
+							</alt>
+							<and mandatory="true" name="Frisur">
+								<alt name="Zopf">
+									<feature mandatory="true" name="geflochten"/>
+									<feature mandatory="true" name="Pferdeschwanz"/>
+								</alt>
+								<feature name="Topiert"/>
+								<feature name="Offen"/>
+							</and>
+							<alt mandatory="true" name="Struktur">
+								<feature mandatory="true" name="glatt"/>
+								<feature mandatory="true" name="gelockt"/>
+							</alt>
+						</and>
+					</and>
+					<alt mandatory="true" name="Körper">
+						<feature mandatory="true" name="gelenkig"/>
+						<feature mandatory="true" name="steif"/>
+					</alt>
+					<and name="Kleidung">
+						<alt name="Unterteil">
+							<alt mandatory="true" name="Rock">
+								<feature mandatory="true" name="Mini"/>
+								<feature mandatory="true" name="Midi"/>
+								<feature mandatory="true" name="Lang"/>
+							</alt>
+							<alt mandatory="true" name="Hose">
+								<feature mandatory="true" name="Jeans"/>
+								<feature mandatory="true" name="Short"/>
+								<feature mandatory="true" name="Chino"/>
+							</alt>
+						</alt>
+						<alt name="Oberteil">
+							<feature mandatory="true" name="Hemd"/>
+							<feature mandatory="true" name="Bluse"/>
+							<alt mandatory="true" name="Top">
+								<feature mandatory="true" name="Spaghetti"/>
+								<feature mandatory="true" name="Crop"/>
+							</alt>
+							<feature mandatory="true" name="Tshirt"/>
+						</alt>
+						<alt name="Einteiler">
+							<feature mandatory="true" name="Jumpsuit"/>
+							<feature mandatory="true" name="Kleid"/>
+						</alt>
+					</and>
+					<alt name="Genre">
+						<feature mandatory="true" name="Prinzessin"/>
+						<feature mandatory="true" name="Strand"/>
+						<feature mandatory="true" name="Wintersport"/>
+						<feature mandatory="true" name="Reiten"/>
+					</alt>
+					<or name="Zubehör">
+						<feature mandatory="true" name="Auto"/>
+						<feature mandatory="true" name="Pferd"/>
+						<feature mandatory="true" name="Traumschloss"/>
+						<feature mandatory="true" name="Campingwagen"/>
+					</or>
+					<alt mandatory="true" name="Alter">
+						<feature mandatory="true" name="Teenager"/>
+						<feature mandatory="true" name="Kind"/>
+						<feature mandatory="true" name="Erwachsen"/>
+					</alt>
+					<alt mandatory="true" name="Nationalität">
+						<feature mandatory="true" name="Asiatisch"/>
+						<feature mandatory="true" name="Afrikanisch"/>
+						<feature mandatory="true" name="Europäisch"/>
+					</alt>
+				</and>
+			</alt>
+		</struct>
+		<constraints/>
+		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
+		<comments/>
+		<featureOrder userDefined="false"/>
+	</featureModel>
