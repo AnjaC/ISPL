@@ -53,7 +53,11 @@
 						</alt>
 						<alt name="Einteiler">
 							<feature mandatory="true" name="Jumpsuit"/>
-							<feature mandatory="true" name="Kleid"/>
+							<and mandatory="true" name="Kleid">
+								<feature name="Minikleid"/>
+								<feature name="Midikleid"/>
+								<feature name="Langeskleid"/>
+							</and>
 						</alt>
 					</and>
 					<alt name="Genre">
@@ -81,7 +85,20 @@
 				</and>
 			</alt>
 		</struct>
-		<constraints/>
+		<constraints>
+			<rule>
+				<imp>
+					<var>Kleidung</var>
+					<disj>
+						<conj>
+							<var>Oberteil</var>
+							<var>Unterteil</var>
+						</conj>
+						<var>Einteiler</var>
+					</disj>
+				</imp>
+			</rule>
+		</constraints>
 		<calculations Auto="true" Constraints="true" Features="true" Redundant="true" Tautology="true"/>
 		<comments/>
 		<featureOrder userDefined="false"/>
