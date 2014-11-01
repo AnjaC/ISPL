@@ -76,6 +76,7 @@
 						<feature mandatory="true" name="Teenager"/>
 						<feature mandatory="true" name="Kind"/>
 						<feature mandatory="true" name="Erwachsen"/>
+						<feature mandatory="true" name="Baby"/>
 					</alt>
 					<alt mandatory="true" name="Nationalität">
 						<feature mandatory="true" name="Asiatisch"/>
